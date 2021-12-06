@@ -4,12 +4,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class AuthTest {
-    private UserData user = new UserData();
-    private FormObject form = new FormObject();
+    private static UserData user = new UserData();
+    private static FormObject form = new FormObject();
 
     @BeforeEach
     void openBrowser() {
