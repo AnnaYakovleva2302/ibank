@@ -1,14 +1,12 @@
-package ru.netology.ibank;
+package ru.netology.ibank.pageObject;
 
 import com.codeborne.selenide.SelenideElement;
-import lombok.Data;
 
 import static com.codeborne.selenide.Selenide.$;
 
-@Data
 public class FormObject {
-    private SelenideElement errorContainer;
-    private SelenideElement successContainer;
+    public SelenideElement errorContainer;
+    public SelenideElement successContainer;
 
     public FormObject() {
         errorContainer = $("[data-test-id=error-notification] .notification__content");
